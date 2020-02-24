@@ -22,6 +22,11 @@ module.exports = appInfo => {
   const userConfig = {
     // myAppName: 'egg',
   };
+  config.security = {
+    csrf: {
+      enable: false,
+    },
+  };
 
   config.mysql = {
     // 单数据库信息配置
