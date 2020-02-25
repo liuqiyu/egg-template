@@ -62,9 +62,34 @@ class ArticleService extends Service {
    * 详情
    * @param {*} params
    */
-  detail() {
-    const data = '刘岂宇';
-    return data;
+  async detail(id) {
+    const { app } = this;
+    try {
+      const res = await app.mysql.get('article_lists', {
+        id,
+      });
+      console.log(321, res);
+      return res;
+    } catch (e) {
+      console.log(e);
+      return null;
+    }
+  }
+
+  /**
+   * 删除
+   */
+  async delete(id) {
+    const { app } = this;
+    try {
+      const res = await app.mysql.delete('article_lists', {
+        id,
+      });
+      return res;
+    } catch (e) {
+      console.log(e);
+      return null;
+    }
   }
 }
 

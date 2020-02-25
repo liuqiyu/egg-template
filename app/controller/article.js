@@ -73,11 +73,40 @@ class ArticleController extends Controller {
    */
   async detail() {
     const { ctx, service } = this;
-    const res = await service.article.detail();
-    ctx.body = {
-      data: res,
-    };
-    ctx.status = 201;
+    const id = ctx.request.body.id;
+    const res = await service.article.detail(id);
+    if (res) {
+      ctx.body = {
+        status: 200,
+        data: res,
+        message: '查询成功',
+      };
+    } else {
+      ctx.body = {
+        status: 500,
+        message: '查询失败',
+      };
+    }
+  }
+
+  /**
+   * 删除
+   */
+  async delete() {
+    const { ctx, service } = this;
+    const id = ctx.request.body.id;
+    const res = await service.article.delete(id);
+    if (res) {
+      ctx.body = {
+        status: 200,
+        message: '删除成功',
+      };
+    } else {
+      ctx.body = {
+        status: 500,
+        message: '删除失败',
+      };
+    }
   }
 }
 
