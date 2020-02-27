@@ -1,5 +1,4 @@
 'use strict';
-
 const Controller = require('egg').Controller;
 
 class ArticleController extends Controller {
@@ -11,8 +10,8 @@ class ArticleController extends Controller {
     const params = {
       name: ctx.request.body.name || null,
       description: ctx.request.body.description || null,
-      create_date: new Date(),
     };
+    console.log(params);
     const res = await service.article.create(params);
     if (res) {
       ctx.body = {
@@ -33,7 +32,8 @@ class ArticleController extends Controller {
    */
   async lists() {
     const { ctx, service } = this;
-    const res = await service.article.lists();
+    const data = ctx.request.query;
+    const res = await service.article.lists(data);
     if (res) {
       ctx.body = {
         status: 200,

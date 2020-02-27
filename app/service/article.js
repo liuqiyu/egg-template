@@ -13,8 +13,8 @@ class ArticleService extends Service {
       const res = await app.mysql.insert('article_lists', {
         name: params.name,
         description: params.description,
-        create_date: params.create_date,
-        update_date: params.update_date || null,
+        create_date: Date.now(),
+        update_date: Date.now(),
       });
       return res;
     } catch (e) {
@@ -27,10 +27,14 @@ class ArticleService extends Service {
    * 列表
    * @param {*} params
    */
-  async lists() {
+  async lists(query) {
     const { app } = this;
     try {
-      const data = await app.mysql.query('select * from article_lists');
+      console.log(query);
+      const data = await app.mysql.select('article_lists', {
+        limit: 5, // 返回数据量
+        offset: 0, // 数据偏移量
+      });
       return data;
     } catch (e) {
       console.log(e);
@@ -49,6 +53,7 @@ class ArticleService extends Service {
         id: params.id,
         name: params.name,
         description: params.description,
+        update_date: Date.now(),
       });
       return res;
     } catch (e) {
@@ -80,9 +85,8 @@ class ArticleService extends Service {
   async delete(id) {
     const { app } = this;
     try {
-      const res = await app.mysql.delete('article_lists', {
-        id,
-      });
+      console.log(`delete from article_lists where id in (${id})`);
+      const res = await app.mysql.query(`delete from article_lists where id in (${id})`);
       return res;
     } catch (e) {
       console.log(e);
