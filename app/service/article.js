@@ -45,11 +45,10 @@ class ArticleService extends Service {
   async update(params) {
     const { app } = this;
     try {
-      const res = await app.mysql.insert('article_lists', {
+      const res = await app.mysql.update('article_lists', {
+        id: params.id,
         name: params.name,
         description: params.description,
-        create_date: params.create_date,
-        update_date: params.update_date || null,
       });
       return res;
     } catch (e) {
@@ -68,7 +67,6 @@ class ArticleService extends Service {
       const res = await app.mysql.get('article_lists', {
         id,
       });
-      console.log(321, res);
       return res;
     } catch (e) {
       console.log(e);

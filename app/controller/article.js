@@ -53,17 +53,18 @@ class ArticleController extends Controller {
    */
   async update() {
     const { ctx, service } = this;
-    const res = await service.article.lists();
+    const data = ctx.request.body;
+    const res = await service.article.update(data);
     if (res) {
       ctx.body = {
         status: 200,
-        message: '查询成功',
+        message: '编辑成功',
         data: res,
       };
     } else {
       ctx.body = {
         status: 500,
-        errMsg: '查询失败',
+        errMsg: '编辑失败',
       };
     }
   }
@@ -73,7 +74,7 @@ class ArticleController extends Controller {
    */
   async detail() {
     const { ctx, service } = this;
-    const id = ctx.request.body.id;
+    const id = ctx.request.query.id;
     const res = await service.article.detail(id);
     if (res) {
       ctx.body = {
