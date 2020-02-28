@@ -33,12 +33,15 @@ class ArticleController extends Controller {
   async lists() {
     const { ctx, service } = this;
     const data = ctx.request.query;
+    console.log(data);
     const res = await service.article.lists(data);
     if (res) {
       ctx.body = {
         status: 200,
         message: '查询成功',
-        data: res,
+        data: {
+          ...res,
+        },
       };
     } else {
       ctx.body = {

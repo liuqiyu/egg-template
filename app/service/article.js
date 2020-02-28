@@ -30,12 +30,19 @@ class ArticleService extends Service {
   async lists(query) {
     const { app } = this;
     try {
-      console.log(query);
-      const data = await app.mysql.select('article_lists', {
-        limit: 5, // 返回数据量
-        offset: 0, // 数据偏移量
-      });
-      return data;
+      const name = query.name || null;
+      const description = query.description || null;
+      const currentPage = query.currentPage || 1;
+      const pageSize = query.pageSize || 20;
+      const sql = `select * from article_lists where (name like ${name} or name is not null) and (description like ${description} or description is not null) limit ${(currentPage - 1) * pageSize}, ${pageSize}`;
+      const data = await app.mysql.query(sql);
+      console.log(sql);
+      const total = await app.mysql.query('SELECT count(*) as total from article_lists');
+      console.log(total[0].total);
+      return {
+        data,
+        total: total[0].total,
+      };
     } catch (e) {
       console.log(e);
       return null;
