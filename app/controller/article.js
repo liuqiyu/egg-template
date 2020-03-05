@@ -32,9 +32,15 @@ class ArticleController extends Controller {
    */
   async lists() {
     const { ctx, service } = this;
-    const data = ctx.request.query;
-    console.log(data);
-    const res = await service.article.lists(data);
+    const query = ctx.request.query;
+    const currentPage = query.currentPage || 1;
+    const pageSize = query.pageSize || 20;
+    const name = query.name;
+    const description = query.description;
+    const create_date = query.create_date;
+    const update_date = query.update_date;
+
+    const res = await service.article.lists(name, description, create_date, update_date, currentPage, pageSize);
     if (res) {
       ctx.body = {
         status: 200,

@@ -27,18 +27,20 @@ class ArticleService extends Service {
    * 列表
    * @param {*} params
    */
-  async lists(query) {
+  async lists(name, description, create_date, update_date, currentPage, pageSize) {
     const { app } = this;
     try {
-      const name = query.name || null;
-      const description = query.description || null;
-      const currentPage = query.currentPage || 1;
-      const pageSize = query.pageSize || 20;
-      const sql = `select * from article_lists where (name like ${name} or name is not null) and (description like ${description} or description is not null) limit ${(currentPage - 1) * pageSize}, ${pageSize}`;
+      let sql = 'select * from article_lists where 1=1 ';
+      if (name) {
+        sql += `and name like '%${name}%' `;
+      }
+      if (description) {
+        sql += `and description like '%${description}%' `;
+      }
+      sql += `limit ${(currentPage - 1) * pageSize}, ${pageSize}`;
+      console.log('sql', sql);
       const data = await app.mysql.query(sql);
-      console.log(sql);
       const total = await app.mysql.query('SELECT count(*) as total from article_lists');
-      console.log(total[0].total);
       return {
         data,
         total: total[0].total,
