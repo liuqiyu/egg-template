@@ -39,8 +39,10 @@ class ArticleController extends Controller {
     const description = query.description;
     const create_date = query.create_date;
     const update_date = query.update_date;
+    const order = query.order;
+    const prop = query.prop;
 
-    const res = await service.article.lists(name, description, create_date, update_date, currentPage, pageSize);
+    const res = await service.article.lists(name, description, create_date, update_date, currentPage, pageSize, order, prop);
     if (res) {
       ctx.body = {
         status: 200,

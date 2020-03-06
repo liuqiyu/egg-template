@@ -27,7 +27,7 @@ class ArticleService extends Service {
    * 列表
    * @param {*} params
    */
-  async lists(name, description, create_date, update_date, currentPage, pageSize) {
+  async lists(name, description, create_date, update_date, currentPage, pageSize, order, prop) {
     const { app } = this;
     try {
       let sql = 'select * from article_lists where 1=1 ';
@@ -36,6 +36,12 @@ class ArticleService extends Service {
       }
       if (description) {
         sql += `and description like '%${description}%' `;
+      }
+      if (order && prop) {
+        const order1 = order === 'descending' ? 'DESC' : 'ASC';
+        sql += `order by ${prop} ${order1} `;
+      } else {
+        sql += 'order by create_date DESC ';
       }
       sql += `limit ${(currentPage - 1) * pageSize}, ${pageSize}`;
       console.log('sql', sql);
