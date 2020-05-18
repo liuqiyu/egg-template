@@ -1,0 +1,89 @@
+'use strict';
+const moment = require('moment')
+const Controller = require('egg').Controller;
+
+class FormController extends Controller {
+  /**
+   * 创建
+   */
+  async create () {
+    const { ctx, service } = this;
+    let params = moment(new Date(), 'YYYY-MM-DD HH:mm:ss').valueOf();
+    let title = ctx.request.body.title;
+    let content = ctx.request.body.content;
+    let group_id = ctx.request.body.group_id;
+    let created_date = moment(new Date(), 'YYYY-MM-DD HH:mm:ss').valueOf()
+    const res = await service.form.create(title, params, content, group_id, created_date);
+    ctx.body = res
+  }
+
+  /**
+   * 列表
+   */
+  async lists () {
+    const { ctx, service } = this;
+    const body = ctx.request.body;
+    const currentPage = body.currentPage || 1;
+    const pageSize = body.pageSize || 20;
+    const params = body.params;
+    const group_id = body.group_id;
+    const order = body.order;
+    const prop = body.prop;
+
+    const res = await service.form.lists(params, group_id, currentPage, pageSize, order, prop);
+    ctx.body = res;
+  }
+
+  /**
+   * 更新
+   */
+  async update () {
+    const { ctx, service } = this;
+    const data = ctx.request.body;
+    const res = await service.form.update(data);
+    if (res) {
+      ctx.body = {
+        status: 200,
+        message: '编辑成功',
+        data: res,
+      };
+    } else {
+      ctx.body = {
+        status: 500,
+        errMsg: '编辑失败',
+      };
+    }
+  }
+
+  /**
+   * 详情
+   */
+  async detail () {
+    const { ctx, service } = this;
+    const params = ctx.request.query.params;
+    const res = await service.form.detail(params);
+    ctx.body = res;
+  }
+
+  /**
+   * 删除
+   */
+  async delete () {
+    const { ctx, service } = this;
+    const id = ctx.request.body.id;
+    const res = await service.form.delete(id);
+    if (res) {
+      ctx.body = {
+        status: 200,
+        message: '删除成功',
+      };
+    } else {
+      ctx.body = {
+        status: 500,
+        message: '删除失败',
+      };
+    }
+  }
+}
+
+module.exports = FormController;

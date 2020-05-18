@@ -1,0 +1,19 @@
+// This file is created by egg-ts-helper@1.25.7
+// Do not modify this file!!!!!!!!!
+
+import 'egg';
+import ExportForm = require('../../../app/controller/form');
+import ExportFormModule = require('../../../app/controller/formModule');
+import ExportProject = require('../../../app/controller/project');
+import ExportTable = require('../../../app/controller/table');
+import ExportUser = require('../../../app/controller/user');
+
+declare module 'egg' {
+  interface IController {
+    form: ExportForm;
+    formModule: ExportFormModule;
+    project: ExportProject;
+    table: ExportTable;
+    user: ExportUser;
+  }
+}

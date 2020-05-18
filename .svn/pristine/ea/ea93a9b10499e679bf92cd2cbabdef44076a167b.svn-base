@@ -1,0 +1,210 @@
+'use strict';
+
+const Service = require('egg').Service;
+
+class FormService extends Service {
+  /**
+   * 新增
+   * @param {*} params 路由参数
+   * @param {*} content 内容
+   * @param {*} module_id 分组ID
+   * @param {*} created_date 创建时间
+   */
+  async create(title, content = '', image = '', module_id, created_date) {
+    const { app } = this;
+    try {
+      let result = {};
+      const newContent = content.replace(/\\/g, '\\\\');
+      const sql = `insert into form_lists (title, content, image, module_id, created_date) values ('${title}', '${newContent}', '${image}', ${module_id}, ${created_date})`;
+      const res = await app.mysql.query(sql);
+      if (res.affectedRows === 1) {
+        const info = await this.app.mysql.select('form_lists', {
+          where: {
+            id: res.insertId,
+          },
+        });
+        result = {
+          code: 200,
+          message: 'success',
+          data: info[0],
+        };
+      } else {
+        result = {
+          code: 200,
+          message: 'error',
+          data: null,
+        };
+      }
+      return result;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  /**
+   * 列表
+   * @param {*} params
+   */
+  async lists(module_id, project_id, currentPage = 1, pageSize = 6, order, prop) {
+    const { app } = this;
+    try {
+      let allModuleId = module_id || [];
+      if (allModuleId.length === 0) {
+        return {
+          status: 200,
+          data: {
+            data: [],
+            total: 0,
+          },
+          message: '',
+        };
+      }
+      if (project_id && !module_id) {
+        const data1 = await app.mysql.query(`select id from form_module where project_id = ${project_id}`);
+        allModuleId = data1.map(item => {
+          return item.id;
+        }).join(',');
+      }
+      let sql = 'select * from form_lists where 1=1 ';
+      let sql2 = 'SELECT count(*) as total from form_lists where 1=1 ';
+      if (allModuleId) {
+        sql += `and module_id in (${allModuleId}) `;
+        sql2 += `and module_id in (${allModuleId}) `;
+      }
+      if (order && prop) {
+        const order1 = order === 'descending' ? 'DESC' : 'ASC';
+        sql += `order by ${prop} ${order1} `;
+      } else {
+        sql += 'order by created_date DESC ';
+      }
+      sql += `limit ${(currentPage - 1) * pageSize}, ${pageSize}`;
+      console.log(111, sql);
+      const data = await app.mysql.query(sql);
+      const total = await app.mysql.query(sql2);
+      if (data.length > 0) {
+        return {
+          status: 200,
+          data: {
+            data,
+            total: total[0].total,
+          },
+          message: 'success',
+        };
+      }
+      return {
+        status: 200,
+        data: [],
+        message: '',
+      };
+
+    } catch (e) {
+      return null;
+    }
+  }
+
+  /**
+   *
+   * @param {*} title
+   * @param {*} content
+   * @param {*} module_id
+   */
+  async update(id, title, content, image, module_id) {
+    const { app } = this;
+    try {
+      let sql = 'update form_lists set ';
+      let result;
+      if (title) {
+        sql += `title = ${title}`;
+      }
+      if (content) {
+        const newContent = content.replace(/\\/g, '\\\\');
+        sql += `content = '${newContent}' `;
+      }
+      if (image) {
+        sql += `, image = '${image}' `;
+      }
+      if (module_id) {
+        sql += `module_id = ${module_id} `;
+      }
+      sql += `where id = ${id}`;
+      const res = await app.mysql.query(sql);
+      if (res.affectedRows === 1) {
+        const info = await this.app.mysql.select('form_lists', {
+          where: {
+            id,
+          },
+        });
+        result = {
+          code: 200,
+          message: 'succss',
+          data: info[0],
+        };
+      } else {
+        result = {
+          code: 500,
+          message: 'error',
+          data: null,
+        };
+      }
+      return result;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  /**
+   * 详情
+   * @param {*} params
+   */
+  async detail(id) {
+    const { app } = this;
+    try {
+      let result = {};
+      const res = await app.mysql.get('form_lists', {
+        id,
+      });
+      if (res) {
+        result = {
+          status: 200,
+          data: res,
+          message: '查询成功',
+        };
+      } else {
+        result = {
+          status: 200,
+          data: null,
+          message: '查询失败',
+        };
+      }
+      return result;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  /**
+   * 删除
+   */
+  async delete(id) {
+    const { app } = this;
+    try {
+      const res = await app.mysql.query(`delete from form_lists where id in (${id})`);
+      if (res.affectedRows > 0) {
+        return {
+          status: 200,
+          message: 'success',
+        };
+      }
+      return {
+        status: 500,
+        message: 'error',
+      };
+
+    } catch (e) {
+      console.log(e);
+      return null;
+    }
+  }
+}
+
+module.exports = FormService;

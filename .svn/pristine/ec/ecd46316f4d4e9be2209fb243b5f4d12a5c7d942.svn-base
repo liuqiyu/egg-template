@@ -1,0 +1,673 @@
+2020-03-31 17:58:20,340 ERROR 2904 [-/127.0.0.1/-/24ms POST /group/create] nodejs.ER_DUP_ENTRYError: ER_DUP_ENTRY: Duplicate entry '你好' for key 'group_name'
+    at Query.Sequence._packetToError (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    --------------------
+    at Pool.query (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at D:\myself\asp-form-manage\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\myself\asp-form-manage\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (D:\myself\asp-form-manage\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (D:\myself\asp-form-manage\node_modules\_ali-rds@3.3.0@ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\myself\asp-form-manage\node_modules\_ali-rds@3.3.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\myself\asp-form-manage\node_modules\_co@4.6.0@co\index.js:65:19)
+    at D:\myself\asp-form-manage\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: INSERT INTO `groups`(`group_name`) VALUES('你好')
+code: "ER_DUP_ENTRY"
+errno: 1062
+sqlMessage: "Duplicate entry '你好' for key 'group_name'"
+sqlState: "23000"
+index: 0
+sql: "INSERT INTO `groups`(`group_name`) VALUES('你好')"
+name: "ER_DUP_ENTRYError"
+pid: 2904
+hostname: liuqiyu
+
+2020-03-31 17:58:38,401 ERROR 19156 [-/127.0.0.1/-/32ms POST /group/create] nodejs.ER_DUP_ENTRYError: ER_DUP_ENTRY: Duplicate entry '你好' for key 'group_name'
+    at Query.Sequence._packetToError (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    --------------------
+    at Pool.query (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at D:\myself\asp-form-manage\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\myself\asp-form-manage\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (D:\myself\asp-form-manage\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (D:\myself\asp-form-manage\node_modules\_ali-rds@3.3.0@ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\myself\asp-form-manage\node_modules\_ali-rds@3.3.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\myself\asp-form-manage\node_modules\_co@4.6.0@co\index.js:65:19)
+    at D:\myself\asp-form-manage\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: INSERT INTO `groups`(`group_name`) VALUES('你好')
+code: "ER_DUP_ENTRY"
+errno: 1062
+sqlMessage: "Duplicate entry '你好' for key 'group_name'"
+sqlState: "23000"
+index: 0
+sql: "INSERT INTO `groups`(`group_name`) VALUES('你好')"
+name: "ER_DUP_ENTRYError"
+pid: 19156
+hostname: liuqiyu
+
+2020-03-31 17:58:45,007 ERROR 12732 [-/127.0.0.1/-/30ms POST /group/create] nodejs.ER_DUP_ENTRYError: ER_DUP_ENTRY: Duplicate entry '你好' for key 'group_name'
+    at Query.Sequence._packetToError (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    --------------------
+    at Pool.query (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at D:\myself\asp-form-manage\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\myself\asp-form-manage\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (D:\myself\asp-form-manage\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (D:\myself\asp-form-manage\node_modules\_ali-rds@3.3.0@ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\myself\asp-form-manage\node_modules\_ali-rds@3.3.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\myself\asp-form-manage\node_modules\_co@4.6.0@co\index.js:65:19)
+    at D:\myself\asp-form-manage\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: INSERT INTO `groups`(`group_name`) VALUES('你好')
+code: "ER_DUP_ENTRY"
+errno: 1062
+sqlMessage: "Duplicate entry '你好' for key 'group_name'"
+sqlState: "23000"
+index: 0
+sql: "INSERT INTO `groups`(`group_name`) VALUES('你好')"
+name: "ER_DUP_ENTRYError"
+pid: 12732
+hostname: liuqiyu
+
+2020-03-31 18:33:05,974 WARN 4400 [-/::1/-/15ms POST /form/create] nodejs.SyntaxError: Unexpected token ： in JSON at position 36, check bodyParser config
+    at JSON.parse (<anonymous>)
+    at parse (D:\myself\asp-form-manage\node_modules\_co-body@6.0.0@co-body\lib\json.js:57:17)
+    at AsyncFunction.module.exports [as json] (D:\myself\asp-form-manage\node_modules\_co-body@6.0.0@co-body\lib\json.js:41:20)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+status: 400
+body: "{\n\t\"content\": \"我爱你+111\",\n\t\"group_id\"：8\n}"
+pid: 4400
+hostname: liuqiyu
+
+2020-04-03 19:26:58,507 WARN 11808 [-/::1/-/14ms DELETE /form/delete] nodejs.SyntaxError: Unexpected token i in JSON at position 3, check bodyParser config
+    at JSON.parse (<anonymous>)
+    at parse (D:\myself\AspFormManage\node_modules\_co-body@6.0.0@co-body\lib\json.js:57:17)
+    at AsyncFunction.module.exports [as json] (D:\myself\AspFormManage\node_modules\_co-body@6.0.0@co-body\lib\json.js:41:20)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+status: 400
+body: "{\n\tid: 47\n}"
+pid: 11808
+hostname: liuqiyu
+
+2020-04-03 19:28:10,270 WARN 13680 [-/::1/-/17ms DELETE /form/delete?id=47] nodejs.SyntaxError: Unexpected token i in JSON at position 3, check bodyParser config
+    at JSON.parse (<anonymous>)
+    at parse (D:\myself\AspFormManage\node_modules\_co-body@6.0.0@co-body\lib\json.js:57:17)
+    at AsyncFunction.module.exports [as json] (D:\myself\AspFormManage\node_modules\_co-body@6.0.0@co-body\lib\json.js:41:20)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+status: 400
+body: "{\n\tid: 47\n}"
+pid: 13680
+hostname: liuqiyu
+
+2020-04-03 19:28:31,728 WARN 18212 [-/::1/-/21ms DELETE /form/delete?id=47] nodejs.SyntaxError: Unexpected token i in JSON at position 3, check bodyParser config
+    at JSON.parse (<anonymous>)
+    at parse (D:\myself\AspFormManage\node_modules\_co-body@6.0.0@co-body\lib\json.js:57:17)
+    at AsyncFunction.module.exports [as json] (D:\myself\AspFormManage\node_modules\_co-body@6.0.0@co-body\lib\json.js:41:20)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+status: 400
+body: "{\n\tid: 47\n}"
+pid: 18212
+hostname: liuqiyu
+
+2020-04-03 19:28:42,121 WARN 18212 [-/::1/-/1ms DELETE /form/delete?id=47] nodejs.SyntaxError: Unexpected token i in JSON at position 3, check bodyParser config
+    at JSON.parse (<anonymous>)
+    at parse (D:\myself\AspFormManage\node_modules\_co-body@6.0.0@co-body\lib\json.js:57:17)
+    at AsyncFunction.module.exports [as json] (D:\myself\AspFormManage\node_modules\_co-body@6.0.0@co-body\lib\json.js:41:20)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+status: 400
+body: "{\n\tid: 47\n}"
+pid: 18212
+hostname: liuqiyu
+
+2020-04-03 19:29:16,856 WARN 4696 [-/::1/-/15ms DELETE /form/delete] nodejs.SyntaxError: Unexpected token i in JSON at position 3, check bodyParser config
+    at JSON.parse (<anonymous>)
+    at parse (D:\myself\AspFormManage\node_modules\_co-body@6.0.0@co-body\lib\json.js:57:17)
+    at AsyncFunction.module.exports [as json] (D:\myself\AspFormManage\node_modules\_co-body@6.0.0@co-body\lib\json.js:41:20)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+status: 400
+body: "{\n\tid: \"47\"\n}"
+pid: 4696
+hostname: liuqiyu
+
+2020-04-03 19:54:52,415 ERROR 16056 [-/127.0.0.1/-/28ms POST /form/detail] nodejs.ReferenceError: res is not defined
+    at FormController.detail (D:\myself\AspFormManage\app\controller\form.js:57:17)
+    at Object.callFn (D:\myself\AspFormManage\node_modules\_egg-core@4.17.4@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\myself\AspFormManage\node_modules\_egg-core@4.17.4@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\myself\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\myself\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\myself\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (D:\myself\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at D:\myself\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\myself\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at D:\myself\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+
+pid: 16056
+hostname: liuqiyu
+
+2020-04-03 19:55:11,290 ERROR 19152 [-/127.0.0.1/-/24ms POST /form/detail] nodejs.ReferenceError: res is not defined
+    at FormController.detail (D:\myself\AspFormManage\app\controller\form.js:57:17)
+    at Object.callFn (D:\myself\AspFormManage\node_modules\_egg-core@4.17.4@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\myself\AspFormManage\node_modules\_egg-core@4.17.4@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\myself\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\myself\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\myself\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (D:\myself\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at D:\myself\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\myself\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at D:\myself\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+
+pid: 19152
+hostname: liuqiyu
+
+2020-04-03 19:55:59,410 ERROR 6120 [-/127.0.0.1/-/21ms POST /form/detail] nodejs.ReferenceError: params is not defined
+    at FormController.detail (D:\myself\AspFormManage\app\controller\form.js:57:17)
+    at Object.callFn (D:\myself\AspFormManage\node_modules\_egg-core@4.17.4@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\myself\AspFormManage\node_modules\_egg-core@4.17.4@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\myself\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\myself\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\myself\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (D:\myself\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at D:\myself\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\myself\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at D:\myself\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+
+pid: 6120
+hostname: liuqiyu
+
+2020-04-03 19:56:10,257 ERROR 19096 [-/127.0.0.1/-/27ms POST /form/detail] nodejs.ReferenceError: params is not defined
+    at FormController.detail (D:\myself\AspFormManage\app\controller\form.js:57:17)
+    at Object.callFn (D:\myself\AspFormManage\node_modules\_egg-core@4.17.4@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\myself\AspFormManage\node_modules\_egg-core@4.17.4@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\myself\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\myself\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\myself\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (D:\myself\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at D:\myself\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\myself\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at D:\myself\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+
+pid: 19096
+hostname: liuqiyu
+
+2020-04-03 19:56:20,904 ERROR 19096 [-/127.0.0.1/-/2ms POST /form/detail] nodejs.ReferenceError: params is not defined
+    at FormController.detail (D:\myself\AspFormManage\app\controller\form.js:57:17)
+    at Object.callFn (D:\myself\AspFormManage\node_modules\_egg-core@4.17.4@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\myself\AspFormManage\node_modules\_egg-core@4.17.4@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\myself\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\myself\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\myself\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (D:\myself\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at D:\myself\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\myself\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at D:\myself\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+
+pid: 19096
+hostname: liuqiyu
+
+2020-04-12 15:04:08,102 WARN 10436 [-/127.0.0.1/-/29ms POST /form/lists] nodejs.UnauthorizedError: 未登录， 请先登录
+    at Object.throw (F:\work\AspFormManage\node_modules\_koa@2.11.0@koa\lib\context.js:97:11)
+    at F:\work\AspFormManage\app\middleware\jwt.js:17:18
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at F:\work\AspFormManage\node_modules\_egg-development@2.4.3@egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at i18n (F:\work\AspFormManage\node_modules\_egg-i18n@2.1.1@egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dta (F:\work\AspFormManage\node_modules\_egg-security@2.7.1@egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+message: "未登录， 请先登录"
+pid: 10436
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 15:43:08,745 WARN 16460 [-/127.0.0.1/-/44ms POST /user/login] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (F:\work\AspFormManage\node_modules\_koa@2.11.0@koa\lib\context.js:97:11)
+    at Object.validate (F:\work\AspFormManage\node_modules\_egg-validate@2.0.2@egg-validate\app\extend\context.js:14:17)
+    at UserController.login (F:\work\AspFormManage\app\controller\user.js:15:15)
+    at Object.callFn (F:\work\AspFormManage\node_modules\_egg-core@4.17.4@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\work\AspFormManage\node_modules\_egg-core@4.17.4@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\work\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\work\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (F:\work\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at F:\work\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"required","field":"userName","code":"missing_field"},{"message":"should be a string","code":"invalid","field":"password"}]
+pid: 16460
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 15:43:27,790 WARN 6096 [-/127.0.0.1/-/36ms POST /user/login] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (F:\work\AspFormManage\node_modules\_koa@2.11.0@koa\lib\context.js:97:11)
+    at Object.validate (F:\work\AspFormManage\node_modules\_egg-validate@2.0.2@egg-validate\app\extend\context.js:14:17)
+    at UserController.login (F:\work\AspFormManage\app\controller\user.js:15:15)
+    at Object.callFn (F:\work\AspFormManage\node_modules\_egg-core@4.17.4@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\work\AspFormManage\node_modules\_egg-core@4.17.4@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\work\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\work\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (F:\work\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at F:\work\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should be a string","code":"invalid","field":"username"},{"message":"should be a string","code":"invalid","field":"password"}]
+pid: 6096
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 15:43:55,703 WARN 13600 [-/127.0.0.1/-/28ms POST /user/login] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (F:\work\AspFormManage\node_modules\_koa@2.11.0@koa\lib\context.js:97:11)
+    at Object.validate (F:\work\AspFormManage\node_modules\_egg-validate@2.0.2@egg-validate\app\extend\context.js:14:17)
+    at UserController.login (F:\work\AspFormManage\app\controller\user.js:15:15)
+    at Object.callFn (F:\work\AspFormManage\node_modules\_egg-core@4.17.4@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\work\AspFormManage\node_modules\_egg-core@4.17.4@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\work\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\work\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (F:\work\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at F:\work\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should be a string","code":"invalid","field":"username"},{"message":"should be a string","code":"invalid","field":"password"}]
+pid: 13600
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 15:44:14,876 WARN 13600 [-/127.0.0.1/-/2ms POST /user/login] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (F:\work\AspFormManage\node_modules\_koa@2.11.0@koa\lib\context.js:97:11)
+    at Object.validate (F:\work\AspFormManage\node_modules\_egg-validate@2.0.2@egg-validate\app\extend\context.js:14:17)
+    at UserController.login (F:\work\AspFormManage\app\controller\user.js:15:15)
+    at Object.callFn (F:\work\AspFormManage\node_modules\_egg-core@4.17.4@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\work\AspFormManage\node_modules\_egg-core@4.17.4@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\work\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\work\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (F:\work\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at F:\work\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should be a string","code":"invalid","field":"username"},{"message":"should be a string","code":"invalid","field":"password"}]
+pid: 13600
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 15:44:25,845 WARN 13600 [-/127.0.0.1/-/3ms POST /user/login] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (F:\work\AspFormManage\node_modules\_koa@2.11.0@koa\lib\context.js:97:11)
+    at Object.validate (F:\work\AspFormManage\node_modules\_egg-validate@2.0.2@egg-validate\app\extend\context.js:14:17)
+    at UserController.login (F:\work\AspFormManage\app\controller\user.js:15:15)
+    at Object.callFn (F:\work\AspFormManage\node_modules\_egg-core@4.17.4@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\work\AspFormManage\node_modules\_egg-core@4.17.4@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\work\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\work\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (F:\work\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at F:\work\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should be a string","code":"invalid","field":"username"},{"message":"should be a string","code":"invalid","field":"password"}]
+pid: 13600
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 15:44:35,959 WARN 9508 [-/127.0.0.1/-/43ms POST /user/login] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (F:\work\AspFormManage\node_modules\_koa@2.11.0@koa\lib\context.js:97:11)
+    at Object.validate (F:\work\AspFormManage\node_modules\_egg-validate@2.0.2@egg-validate\app\extend\context.js:14:17)
+    at UserController.login (F:\work\AspFormManage\app\controller\user.js:15:15)
+    at Object.callFn (F:\work\AspFormManage\node_modules\_egg-core@4.17.4@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\work\AspFormManage\node_modules\_egg-core@4.17.4@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\work\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\work\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (F:\work\AspFormManage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at F:\work\AspFormManage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should be a string","code":"invalid","field":"username"},{"message":"should be a string","code":"invalid","field":"password"}]
+pid: 9508
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 15:45:04,752 ERROR 9508 [-/127.0.0.1/-/2ms POST /user/login] nodejs.TypeError: ctx.helper.encrypt is not a function
+    at UserController.login (F:\work\AspFormManage\app\controller\user.js:17:36)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 9508
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 15:49:25,933 ERROR 7852 [-/127.0.0.1/-/36ms POST /user/login] nodejs.TypeError: Cannot read property 'User' of undefined
+    at UserService.login (F:\work\AspFormManage\app\service\user.js:24:35)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 7852
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 15:49:50,824 ERROR 7828 [-/127.0.0.1/-/33ms POST /user/login] nodejs.TypeError: Cannot read property 'User' of undefined
+    at UserService.login (F:\work\AspFormManage\app\service\user.js:24:35)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 7828
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 15:50:30,739 ERROR 8872 [-/127.0.0.1/-/31ms POST /user/login] nodejs.TypeError: Cannot read property 'User' of undefined
+    at UserService.login (F:\work\AspFormManage\app\service\user.js:24:35)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 8872
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 15:53:03,647 ERROR 1320 [-/127.0.0.1/-/30ms POST /user/login] nodejs.TypeError: Cannot read property 'password' of undefined
+    at UserService.login (F:\work\AspFormManage\app\service\user.js:26:23)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 1320
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 15:53:21,951 ERROR 13020 [-/127.0.0.1/-/99ms POST /user/login] nodejs.TypeError: Cannot read property 'password' of undefined
+    at UserService.login (F:\work\AspFormManage\app\service\user.js:26:23)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 13020
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 15:53:41,812 ERROR 3116 [-/127.0.0.1/-/36ms POST /user/login] nodejs.TypeError: Cannot read property 'username' of undefined
+    at UserService.login (F:\work\AspFormManage\app\service\user.js:35:28)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 3116
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 17:30:54,103 ERROR 18268 [-/127.0.0.1/-/48ms POST /user/login] nodejs.TypeError: Cannot read property 'password' of undefined
+    at UserService.login (F:\work\AspFormManage\app\service\user.js:24:34)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 18268
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 17:31:49,113 ERROR 14524 [-/127.0.0.1/-/61ms POST /user/login] nodejs.TypeError: Cannot read property 'password' of undefined
+    at UserService.login (F:\work\AspFormManage\app\service\user.js:24:34)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 14524
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 17:32:18,727 ERROR 17708 [-/127.0.0.1/-/58ms POST /user/login] nodejs.TypeError: Cannot read property 'password' of undefined
+    at UserService.login (F:\work\AspFormManage\app\service\user.js:24:34)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 17708
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 17:32:41,259 ERROR 8760 [-/127.0.0.1/-/34ms POST /user/login] nodejs.TypeError: Cannot read property 'password' of undefined
+    at UserService.login (F:\work\AspFormManage\app\service\user.js:24:34)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 8760
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 17:33:35,863 ERROR 8232 [-/127.0.0.1/-/34ms POST /user/login] nodejs.TypeError: Cannot read property 'password' of undefined
+    at UserService.login (F:\work\AspFormManage\app\service\user.js:24:34)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 8232
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 17:33:52,210 ERROR 14276 [-/127.0.0.1/-/19ms POST /user/login] nodejs.TypeError: Cannot read property 'password' of undefined
+    at UserService.login (F:\work\AspFormManage\app\service\user.js:24:34)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 14276
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 17:34:18,835 ERROR 14276 [-/127.0.0.1/-/6ms POST /user/login] nodejs.TypeError: Cannot read property 'password' of undefined
+    at UserService.login (F:\work\AspFormManage\app\service\user.js:24:34)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 14276
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 17:52:03,630 ERROR 11656 [-/127.0.0.1/-/40ms POST /form/lists] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (F:\work\AspFormManage\node_modules\_jsonwebtoken@8.5.1@jsonwebtoken\verify.js:75:17)
+    at F:\work\AspFormManage\app\middleware\jwt.js:25:26
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at F:\work\AspFormManage\node_modules\_egg-development@2.4.3@egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at i18n (F:\work\AspFormManage\node_modules\_egg-i18n@2.1.1@egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dta (F:\work\AspFormManage\node_modules\_egg-security@2.7.1@egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 11656
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 17:52:03,670 ERROR 11656 [-/127.0.0.1/-/3ms POST /group/lists] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (F:\work\AspFormManage\node_modules\_jsonwebtoken@8.5.1@jsonwebtoken\verify.js:75:17)
+    at F:\work\AspFormManage\app\middleware\jwt.js:25:26
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at F:\work\AspFormManage\node_modules\_egg-development@2.4.3@egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at i18n (F:\work\AspFormManage\node_modules\_egg-i18n@2.1.1@egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dta (F:\work\AspFormManage\node_modules\_egg-security@2.7.1@egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 11656
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 17:52:27,110 ERROR 11656 [-/127.0.0.1/-/4ms POST /form/lists] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (F:\work\AspFormManage\node_modules\_jsonwebtoken@8.5.1@jsonwebtoken\verify.js:75:17)
+    at F:\work\AspFormManage\app\middleware\jwt.js:25:26
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at F:\work\AspFormManage\node_modules\_egg-development@2.4.3@egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at i18n (F:\work\AspFormManage\node_modules\_egg-i18n@2.1.1@egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dta (F:\work\AspFormManage\node_modules\_egg-security@2.7.1@egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 11656
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 17:52:27,122 ERROR 11656 [-/127.0.0.1/-/1ms POST /group/lists] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (F:\work\AspFormManage\node_modules\_jsonwebtoken@8.5.1@jsonwebtoken\verify.js:75:17)
+    at F:\work\AspFormManage\app\middleware\jwt.js:25:26
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at F:\work\AspFormManage\node_modules\_egg-development@2.4.3@egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at i18n (F:\work\AspFormManage\node_modules\_egg-i18n@2.1.1@egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dta (F:\work\AspFormManage\node_modules\_egg-security@2.7.1@egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 11656
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 17:52:34,843 ERROR 15016 [-/127.0.0.1/-/46ms POST /form/lists] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (F:\work\AspFormManage\node_modules\_jsonwebtoken@8.5.1@jsonwebtoken\verify.js:75:17)
+    at F:\work\AspFormManage\app\middleware\jwt.js:26:26
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at F:\work\AspFormManage\node_modules\_egg-development@2.4.3@egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at i18n (F:\work\AspFormManage\node_modules\_egg-i18n@2.1.1@egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dta (F:\work\AspFormManage\node_modules\_egg-security@2.7.1@egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 15016
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 17:52:34,857 ERROR 15016 [-/127.0.0.1/-/2ms POST /group/lists] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (F:\work\AspFormManage\node_modules\_jsonwebtoken@8.5.1@jsonwebtoken\verify.js:75:17)
+    at F:\work\AspFormManage\app\middleware\jwt.js:26:26
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at F:\work\AspFormManage\node_modules\_egg-development@2.4.3@egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at i18n (F:\work\AspFormManage\node_modules\_egg-i18n@2.1.1@egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dta (F:\work\AspFormManage\node_modules\_egg-security@2.7.1@egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 15016
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 17:52:54,215 ERROR 1604 [-/127.0.0.1/-/61ms POST /form/lists] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (F:\work\AspFormManage\node_modules\_jsonwebtoken@8.5.1@jsonwebtoken\verify.js:75:17)
+    at F:\work\AspFormManage\app\middleware\jwt.js:26:26
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at F:\work\AspFormManage\node_modules\_egg-development@2.4.3@egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at i18n (F:\work\AspFormManage\node_modules\_egg-i18n@2.1.1@egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dta (F:\work\AspFormManage\node_modules\_egg-security@2.7.1@egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 1604
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 17:52:54,240 ERROR 1604 [-/127.0.0.1/-/7ms POST /group/lists] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (F:\work\AspFormManage\node_modules\_jsonwebtoken@8.5.1@jsonwebtoken\verify.js:75:17)
+    at F:\work\AspFormManage\app\middleware\jwt.js:26:26
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at F:\work\AspFormManage\node_modules\_egg-development@2.4.3@egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at i18n (F:\work\AspFormManage\node_modules\_egg-i18n@2.1.1@egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dta (F:\work\AspFormManage\node_modules\_egg-security@2.7.1@egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 1604
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 17:53:21,092 ERROR 14796 [-/127.0.0.1/-/29ms POST /form/lists] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (F:\work\AspFormManage\node_modules\_jsonwebtoken@8.5.1@jsonwebtoken\verify.js:75:17)
+    at F:\work\AspFormManage\app\middleware\jwt.js:27:26
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at F:\work\AspFormManage\node_modules\_egg-development@2.4.3@egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at i18n (F:\work\AspFormManage\node_modules\_egg-i18n@2.1.1@egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dta (F:\work\AspFormManage\node_modules\_egg-security@2.7.1@egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 14796
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 17:53:21,142 ERROR 14796 [-/127.0.0.1/-/2ms POST /group/lists] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (F:\work\AspFormManage\node_modules\_jsonwebtoken@8.5.1@jsonwebtoken\verify.js:75:17)
+    at F:\work\AspFormManage\app\middleware\jwt.js:27:26
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at F:\work\AspFormManage\node_modules\_egg-development@2.4.3@egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at i18n (F:\work\AspFormManage\node_modules\_egg-i18n@2.1.1@egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dta (F:\work\AspFormManage\node_modules\_egg-security@2.7.1@egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 14796
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 17:53:43,398 ERROR 12744 [-/127.0.0.1/-/30ms POST /form/lists] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (F:\work\AspFormManage\node_modules\_jsonwebtoken@8.5.1@jsonwebtoken\verify.js:75:17)
+    at F:\work\AspFormManage\app\middleware\jwt.js:27:26
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at F:\work\AspFormManage\node_modules\_egg-development@2.4.3@egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at i18n (F:\work\AspFormManage\node_modules\_egg-i18n@2.1.1@egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dta (F:\work\AspFormManage\node_modules\_egg-security@2.7.1@egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 12744
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 17:53:43,445 ERROR 12744 [-/127.0.0.1/-/13ms POST /group/lists] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (F:\work\AspFormManage\node_modules\_jsonwebtoken@8.5.1@jsonwebtoken\verify.js:75:17)
+    at F:\work\AspFormManage\app\middleware\jwt.js:27:26
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at F:\work\AspFormManage\node_modules\_egg-development@2.4.3@egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at i18n (F:\work\AspFormManage\node_modules\_egg-i18n@2.1.1@egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dta (F:\work\AspFormManage\node_modules\_egg-security@2.7.1@egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 12744
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 17:53:51,014 ERROR 5960 [-/127.0.0.1/-/22ms POST /form/lists] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (F:\work\AspFormManage\node_modules\_jsonwebtoken@8.5.1@jsonwebtoken\verify.js:75:17)
+    at F:\work\AspFormManage\app\middleware\jwt.js:27:26
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at F:\work\AspFormManage\node_modules\_egg-development@2.4.3@egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at i18n (F:\work\AspFormManage\node_modules\_egg-i18n@2.1.1@egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dta (F:\work\AspFormManage\node_modules\_egg-security@2.7.1@egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 5960
+hostname: XS78G0Z0GSE9XUW
+
+2020-04-12 17:53:51,036 ERROR 5960 [-/127.0.0.1/-/2ms POST /group/lists] nodejs.JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (F:\work\AspFormManage\node_modules\_jsonwebtoken@8.5.1@jsonwebtoken\verify.js:75:17)
+    at F:\work\AspFormManage\app\middleware\jwt.js:27:26
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at F:\work\AspFormManage\node_modules\_egg-development@2.4.3@egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at i18n (F:\work\AspFormManage\node_modules\_egg-i18n@2.1.1@egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dta (F:\work\AspFormManage\node_modules\_egg-security@2.7.1@egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (F:\work\AspFormManage\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+name: "JsonWebTokenError"
+message: "invalid token"
+pid: 5960
+hostname: XS78G0Z0GSE9XUW
+

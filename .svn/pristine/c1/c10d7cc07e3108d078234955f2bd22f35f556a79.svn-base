@@ -1,0 +1,316 @@
+{
+  "keys": "D:\\myself\\AspFormManage\\config\\config.default.js",
+  "middleware": "D:\\myself\\AspFormManage\\config\\config.default.js",
+  "security": {
+    "csrf": {
+      "enable": "D:\\myself\\AspFormManage\\config\\config.default.js",
+      "type": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js",
+      "ignoreJSON": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js",
+      "useSession": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js",
+      "cookieName": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js",
+      "sessionName": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js",
+      "headerName": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js",
+      "bodyName": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js",
+      "queryName": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js",
+      "refererWhiteList": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js"
+    },
+    "domainWhiteList": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js",
+    "protocolWhiteList": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js",
+    "defaultMiddleware": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js",
+    "xframe": {
+      "enable": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js",
+      "value": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js"
+    },
+    "hsts": {
+      "enable": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.local.js",
+      "maxAge": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js",
+      "includeSubdomains": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js"
+    },
+    "dta": {
+      "enable": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js"
+    },
+    "noopen": {
+      "enable": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js"
+    },
+    "nosniff": {
+      "enable": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js",
+      "value": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js"
+    },
+    "xssProtection": {
+      "enable": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js",
+      "value": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js"
+    },
+    "csp": {
+      "enable": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js",
+      "policy": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js",
+      "checkAddress": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js"
+    }
+  },
+  "mysql": {
+    "client": {
+      "host": "D:\\myself\\AspFormManage\\config\\config.default.js",
+      "port": "D:\\myself\\AspFormManage\\config\\config.default.js",
+      "user": "D:\\myself\\AspFormManage\\config\\config.default.js",
+      "password": "D:\\myself\\AspFormManage\\config\\config.default.js",
+      "database": "D:\\myself\\AspFormManage\\config\\config.default.js"
+    },
+    "app": "D:\\myself\\AspFormManage\\config\\config.default.js",
+    "agent": "D:\\myself\\AspFormManage\\config\\config.default.js",
+    "default": {
+      "database": "D:\\myself\\AspFormManage\\node_modules\\_egg-mysql@3.0.0@egg-mysql\\config\\config.default.js",
+      "connectionLimit": "D:\\myself\\AspFormManage\\node_modules\\_egg-mysql@3.0.0@egg-mysql\\config\\config.default.js"
+    }
+  },
+  "jwt": {
+    "secret": "D:\\myself\\AspFormManage\\config\\config.default.js"
+  },
+  "session": {
+    "maxAge": "D:\\myself\\AspFormManage\\node_modules\\_egg-session@3.1.0@egg-session\\config\\config.default.js",
+    "key": "D:\\myself\\AspFormManage\\node_modules\\_egg-session@3.1.0@egg-session\\config\\config.default.js",
+    "httpOnly": "D:\\myself\\AspFormManage\\node_modules\\_egg-session@3.1.0@egg-session\\config\\config.default.js",
+    "encrypt": "D:\\myself\\AspFormManage\\node_modules\\_egg-session@3.1.0@egg-session\\config\\config.default.js"
+  },
+  "helper": {
+    "shtml": "D:\\myself\\AspFormManage\\node_modules\\_egg-security@2.7.1@egg-security\\config\\config.default.js"
+  },
+  "jsonp": {
+    "limit": "D:\\myself\\AspFormManage\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js",
+    "callback": "D:\\myself\\AspFormManage\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js",
+    "csrf": "D:\\myself\\AspFormManage\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "D:\\myself\\AspFormManage\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "D:\\myself\\AspFormManage\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\config.default.js",
+    "templatePath": "D:\\myself\\AspFormManage\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "D:\\myself\\AspFormManage\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "dirs": "D:\\myself\\AspFormManage\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "queryField": "D:\\myself\\AspFormManage\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "cookieField": "D:\\myself\\AspFormManage\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "cookieDomain": "D:\\myself\\AspFormManage\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "D:\\myself\\AspFormManage\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js"
+  },
+  "watcher": {
+    "type": "D:\\myself\\AspFormManage\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\config\\config.local.js",
+    "eventSources": {
+      "default": "D:\\myself\\AspFormManage\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\config\\config.default.js",
+      "development": "D:\\myself\\AspFormManage\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\config\\config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "D:\\myself\\AspFormManage\\node_modules\\_egg-schedule@3.6.4@egg-schedule\\config\\config.default.js",
+      "file": "D:\\myself\\AspFormManage\\node_modules\\_egg-schedule@3.6.4@egg-schedule\\config\\config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "D:\\myself\\AspFormManage\\node_modules\\_egg-schedule@3.6.4@egg-schedule\\config\\config.default.js"
+  },
+  "multipart": {
+    "mode": "D:\\myself\\AspFormManage\\node_modules\\_egg-multipart@2.10.2@egg-multipart\\config\\config.default.js",
+    "autoFields": "D:\\myself\\AspFormManage\\node_modules\\_egg-multipart@2.10.2@egg-multipart\\config\\config.default.js",
+    "defaultCharset": "D:\\myself\\AspFormManage\\node_modules\\_egg-multipart@2.10.2@egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "D:\\myself\\AspFormManage\\node_modules\\_egg-multipart@2.10.2@egg-multipart\\config\\config.default.js",
+    "fieldSize": "D:\\myself\\AspFormManage\\node_modules\\_egg-multipart@2.10.2@egg-multipart\\config\\config.default.js",
+    "fields": "D:\\myself\\AspFormManage\\node_modules\\_egg-multipart@2.10.2@egg-multipart\\config\\config.default.js",
+    "fileSize": "D:\\myself\\AspFormManage\\node_modules\\_egg-multipart@2.10.2@egg-multipart\\config\\config.default.js",
+    "files": "D:\\myself\\AspFormManage\\node_modules\\_egg-multipart@2.10.2@egg-multipart\\config\\config.default.js",
+    "fileExtensions": "D:\\myself\\AspFormManage\\node_modules\\_egg-multipart@2.10.2@egg-multipart\\config\\config.default.js",
+    "whitelist": "D:\\myself\\AspFormManage\\node_modules\\_egg-multipart@2.10.2@egg-multipart\\config\\config.default.js",
+    "tmpdir": "D:\\myself\\AspFormManage\\node_modules\\_egg-multipart@2.10.2@egg-multipart\\config\\config.default.js",
+    "cleanSchedule": {
+      "cron": "D:\\myself\\AspFormManage\\node_modules\\_egg-multipart@2.10.2@egg-multipart\\config\\config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "D:\\myself\\AspFormManage\\node_modules\\_egg-development@2.4.3@egg-development\\config\\config.default.js",
+    "ignoreDirs": "D:\\myself\\AspFormManage\\node_modules\\_egg-development@2.4.3@egg-development\\config\\config.default.js",
+    "fastReady": "D:\\myself\\AspFormManage\\node_modules\\_egg-development@2.4.3@egg-development\\config\\config.default.js",
+    "reloadOnDebug": "D:\\myself\\AspFormManage\\node_modules\\_egg-development@2.4.3@egg-development\\config\\config.default.js",
+    "overrideDefault": "D:\\myself\\AspFormManage\\node_modules\\_egg-development@2.4.3@egg-development\\config\\config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "D:\\myself\\AspFormManage\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "D:\\myself\\AspFormManage\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "D:\\myself\\AspFormManage\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "D:\\myself\\AspFormManage\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "maxFiles": "D:\\myself\\AspFormManage\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "D:\\myself\\AspFormManage\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "maxDays": "D:\\myself\\AspFormManage\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js"
+  },
+  "static": {
+    "prefix": "D:\\myself\\AspFormManage\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "dir": "D:\\myself\\AspFormManage\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "dynamic": "D:\\myself\\AspFormManage\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "preload": "D:\\myself\\AspFormManage\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "buffer": "D:\\myself\\AspFormManage\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "maxFiles": "D:\\myself\\AspFormManage\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js"
+  },
+  "view": {
+    "root": "D:\\myself\\AspFormManage\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.default.js",
+    "cache": "D:\\myself\\AspFormManage\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.local.js",
+    "defaultExtension": "D:\\myself\\AspFormManage\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.default.js",
+    "defaultViewEngine": "D:\\myself\\AspFormManage\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.default.js",
+    "mapping": "D:\\myself\\AspFormManage\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.default.js"
+  },
+  "validate": "D:\\myself\\AspFormManage\\node_modules\\_egg-validate@2.0.2@egg-validate\\config\\config.default.js",
+  "env": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+  "name": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+  "cookies": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+  "proxy": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+  "maxIpsCount": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+  "maxProxyCount": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+  "protocolHeaders": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+  "ipHeaders": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+  "hostHeaders": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+  "pkg": {
+    "name": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "version": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "description": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "private": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "egg": {
+      "declarations": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js"
+    },
+    "dependencies": {
+      "egg": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "egg-mysql": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "egg-scripts": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "egg-validate": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "jsonwebtoken": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "moment": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js"
+    },
+    "devDependencies": {
+      "autod": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "autod-egg": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "egg-bin": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "egg-ci": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "egg-mock": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "eslint": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "eslint-config-egg": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js"
+    },
+    "engines": {
+      "node": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js"
+    },
+    "scripts": {
+      "start": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "stop": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "dev": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "debug": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "test": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "test-local": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "cov": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "lint": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "ci": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "autod": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js"
+    },
+    "ci": {
+      "version": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js"
+    },
+    "repository": {
+      "type": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "url": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js"
+    },
+    "author": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "license": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js"
+  },
+  "baseDir": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+  "HOME": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+  "rundir": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+  "dump": {
+    "ignore": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "notFound": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "sitefile": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "middlewares": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "httpClient": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js"
+  },
+  "bodyParser": {
+    "enable": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "encoding": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "formLimit": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "jsonLimit": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "textLimit": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "strict": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "queryString": {
+      "arrayLimit": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "depth": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "parameterLimit": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js"
+    },
+    "onerror": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js"
+  },
+  "logger": {
+    "dir": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "encoding": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "env": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "level": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "consoleLevel": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "outputJSON": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "buffer": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "appLogName": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "coreLogName": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "agentLogName": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "errorLogName": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "coreLogger": {
+      "consoleLevel": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.local.js"
+    },
+    "allowDebugAtProd": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "dnsCacheLookupInterval": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "request": {
+      "timeout": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "freeSocketTimeout": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "maxSockets": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "maxFreeSockets": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "freeSocketTimeout": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "maxSockets": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "maxFreeSockets": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "logging": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js"
+  },
+  "coreMiddleware": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+  "workerStartTimeout": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+  "serverTimeout": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "port": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+      "hostname": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js",
+    "responseTimeout": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js"
+  },
+  "onClientError": "D:\\myself\\AspFormManage\\node_modules\\_egg@2.26.0@egg\\config\\config.default.js"
+}

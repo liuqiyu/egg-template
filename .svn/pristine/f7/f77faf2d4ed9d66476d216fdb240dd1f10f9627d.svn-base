@@ -1,0 +1,202 @@
+'use strict';
+
+const Service = require('egg').Service;
+
+class FormService extends Service {
+  /**
+   * 新增
+   * @param {*} params 路由参数
+   * @param {*} content 内容
+   * @param {*} group_id 分组ID
+   * @param {*} created_date 创建时间
+   */
+  async create(title, params, content = '', image = '', group_id = '', created_date) {
+    const { app } = this;
+    try {
+      let result = {};
+      // const content1 = content ? `'${content}'` : '';
+      const sql = `insert into lists (title, params, content, image, group_id, created_date) values ('${title}', '${params}', '${content}', '${image}', ${group_id}, '${created_date}')`;
+      const res = await app.mysql.query(sql);
+      if (res.affectedRows === 1) {
+        const info = await this.app.mysql.select('lists', {
+          where: {
+            id: res.insertId,
+          },
+        });
+        result = {
+          code: 200,
+          message: 'success',
+          data: info[0],
+        };
+      } else {
+        result = {
+          code: 200,
+          message: 'error',
+          data: null,
+        };
+      }
+      return result;
+    } catch (e) {
+      console.log(e);
+      return null;
+    }
+  }
+
+  /**
+   * 列表
+   * @param {*} params
+   */
+  async lists(params, group_id, currentPage, pageSize, order, prop) {
+    const { app } = this;
+    try {
+      let sql = 'select * from lists where 1=1 ';
+      let sql2 = 'SELECT count(*) as total from lists where 1=1 ';
+      if (params) {
+        sql += `and params like '%${params}%' `;
+        sql2 += `and params like '%${params}%' `;
+      }
+      if (group_id) {
+        sql += `and group_id = ${group_id} `;
+        sql2 += `and group_id = ${group_id} `;
+      }
+      if (order && prop) {
+        const order1 = order === 'descending' ? 'DESC' : 'ASC';
+        sql += `order by ${prop} ${order1} `;
+      } else {
+        sql += 'order by created_date DESC ';
+      }
+      sql += `limit ${(currentPage - 1) * pageSize}, ${pageSize}`;
+      const data = await app.mysql.query(sql);
+      const total = await app.mysql.query(sql2);
+      if (data.length > 0) {
+        return {
+          status: 200,
+          data: {
+            data,
+            total: total[0].total,
+          },
+          message: 'success',
+        };
+      }
+      return {
+        status: 200,
+        data: [],
+        message: 'error',
+      };
+
+    } catch (e) {
+      console.log(e);
+      return null;
+    }
+  }
+
+  /**
+   *
+   * @param {*} title
+   * @param {*} content
+   * @param {*} group_id
+   */
+  async update(id, title, content, image, group_id) {
+    const { app } = this;
+    try {
+      let sql = 'update lists set ';
+      let result;
+      if (title) {
+        sql += `title = ${title}`;
+      }
+      if (content) {
+        sql += `content = '${content}' `;
+      }
+      if (image) {
+        sql += `, image = '${image}' `;
+      }
+      if (group_id) {
+        sql += `group_id = ${group_id} `;
+      }
+      sql += `where id = ${id}`;
+      console.log(sql);
+      const res = await app.mysql.query(sql);
+      if (res.affectedRows === 1) {
+        console.log(res);
+        const info = await this.app.mysql.select('lists', {
+          where: {
+            id,
+          },
+        });
+        result = {
+          code: 200,
+          message: 'succss',
+          data: info[0],
+        };
+      } else {
+        result = {
+          code: 500,
+          message: 'error',
+          data: null,
+        };
+      }
+      return result;
+    } catch (e) {
+      console.log(e);
+      return null;
+    }
+  }
+
+  /**
+   * 详情
+   * @param {*} params
+   */
+  async detail(id) {
+    const { app } = this;
+    try {
+      let result = {};
+      const res = await app.mysql.get('lists', {
+        id,
+      });
+      if (res) {
+        result = {
+          status: 200,
+          data: res,
+          message: '查询成功',
+        };
+      } else {
+        result = {
+          status: 200,
+          data: null,
+          message: '查询失败',
+        };
+      }
+      return result;
+    } catch (e) {
+      console.log(e);
+      return null;
+    }
+  }
+
+  /**
+   * 删除
+   */
+  async delete(id) {
+    const { app } = this;
+    try {
+      const res = await app.mysql.query(`delete from lists where id in (${id})`);
+      console.log(res);
+      if (res.affectedRows > 0) {
+        return {
+          status: 200,
+          message: 'success',
+        };
+      }
+      return {
+        status: 500,
+        message: 'error',
+      };
+
+    } catch (e) {
+      console.log(e);
+      return null;
+    }
+  }
+}
+
+module.exports = FormService;

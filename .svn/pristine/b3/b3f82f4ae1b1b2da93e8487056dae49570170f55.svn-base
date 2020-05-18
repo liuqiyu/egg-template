@@ -1,0 +1,36 @@
+'use strict';
+const moment = require('moment')
+const Controller = require('egg').Controller;
+
+class GroupController extends Controller {
+  /**
+   * 创建
+   */
+  async create () {
+    const { ctx, service } = this;
+    let group_name = ctx.request.body.group_name;
+    const res = await service.group.create(group_name);
+    ctx.body = res;
+  }
+
+  /**
+ * 列表
+ */
+  async lists () {
+    const { ctx, service } = this;
+    const res = await service.group.lists();
+    ctx.body = res;
+  }
+
+  /**
+   * 删除
+   */
+  async delete () {
+    const { ctx, service } = this;
+    const id = ctx.request.body.id;
+    const res = await service.group.delete(id);
+    ctx.body = res;
+  }
+}
+
+module.exports = GroupController;

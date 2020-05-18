@@ -1,0 +1,75 @@
+2020-03-31 11:12:56,581 ERROR 12324 [-/127.0.0.1/-/13ms POST /form/create] nodejs.ReferenceError: moment is not defined
+    at FormController.create (D:\myself\asp-form-manage\app\controller\form.js:11:57)
+    at Object.callFn (D:\myself\asp-form-manage\node_modules\_egg-core@4.17.4@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\myself\asp-form-manage\node_modules\_egg-core@4.17.4@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\myself\asp-form-manage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\myself\asp-form-manage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\myself\asp-form-manage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (D:\myself\asp-form-manage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at D:\myself\asp-form-manage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\myself\asp-form-manage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at D:\myself\asp-form-manage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+
+pid: 12324
+hostname: liuqiyu
+
+2020-03-31 11:14:19,915 ERROR 260 [-/127.0.0.1/-/24ms POST /form/create] nodejs.ReferenceError: moment is not defined
+    at FormController.create (D:\myself\asp-form-manage\app\controller\form.js:11:57)
+    at Object.callFn (D:\myself\asp-form-manage\node_modules\_egg-core@4.17.4@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\myself\asp-form-manage\node_modules\_egg-core@4.17.4@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\myself\asp-form-manage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\myself\asp-form-manage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\myself\asp-form-manage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (D:\myself\asp-form-manage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at D:\myself\asp-form-manage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\myself\asp-form-manage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at D:\myself\asp-form-manage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+
+pid: 260
+hostname: liuqiyu
+
+2020-03-31 11:14:38,817 ERROR 13808 [-/127.0.0.1/-/30ms POST /form/create] nodejs.ReferenceError: moment is not defined
+    at FormController.create (D:\myself\asp-form-manage\app\controller\form.js:11:57)
+    at Object.callFn (D:\myself\asp-form-manage\node_modules\_egg-core@4.17.4@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\myself\asp-form-manage\node_modules\_egg-core@4.17.4@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\myself\asp-form-manage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\myself\asp-form-manage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\myself\asp-form-manage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (D:\myself\asp-form-manage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at D:\myself\asp-form-manage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\myself\asp-form-manage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at D:\myself\asp-form-manage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+
+pid: 13808
+hostname: liuqiyu
+
+2020-03-31 11:15:09,092 ERROR 10040 [-/127.0.0.1/-/25ms POST /form/create] nodejs.ReferenceError: moment is not defined
+    at FormController.create (D:\myself\asp-form-manage\app\controller\form.js:11:13)
+    at Object.callFn (D:\myself\asp-form-manage\node_modules\_egg-core@4.17.4@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\myself\asp-form-manage\node_modules\_egg-core@4.17.4@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\myself\asp-form-manage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\myself\asp-form-manage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\myself\asp-form-manage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (D:\myself\asp-form-manage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at D:\myself\asp-form-manage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\myself\asp-form-manage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at D:\myself\asp-form-manage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+
+pid: 10040
+hostname: liuqiyu
+
+2020-03-31 11:26:30,160 ERROR 4984 [-/127.0.0.1/-/19ms POST /form/create] nodejs.SyntaxError: Identifier 'params' has already been declared
+    at Object.callFn (D:\myself\asp-form-manage\node_modules\_egg-core@4.17.4@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\myself\asp-form-manage\node_modules\_egg-core@4.17.4@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\myself\asp-form-manage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\myself\asp-form-manage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\myself\asp-form-manage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (D:\myself\asp-form-manage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at D:\myself\asp-form-manage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\myself\asp-form-manage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at D:\myself\asp-form-manage\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+    at dispatch (D:\myself\asp-form-manage\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:195:33)
+
+pid: 4984
+hostname: liuqiyu
+

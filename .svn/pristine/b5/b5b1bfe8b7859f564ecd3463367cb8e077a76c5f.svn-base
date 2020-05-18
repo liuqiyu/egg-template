@@ -1,0 +1,216 @@
+2020-03-31 17:16:51,142 ERROR 19332 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 19332
+hostname: liuqiyu
+
+2020-03-31 17:22:02,846 ERROR 19332 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 19332
+hostname: liuqiyu
+
+2020-03-31 17:32:54,906 ERROR 19332 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 19332
+hostname: liuqiyu
+
+2020-03-31 17:41:11,728 ERROR 16764 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 16764
+hostname: liuqiyu
+
+2020-03-31 17:58:20,321 ERROR 2904 [-/127.0.0.1/-/24ms POST /group/create] nodejs.ER_DUP_ENTRYError: ER_DUP_ENTRY: Duplicate entry '你好' for key 'group_name'
+    at Query.Sequence._packetToError (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    --------------------
+    at Pool.query (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at D:\myself\asp-form-manage\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\myself\asp-form-manage\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (D:\myself\asp-form-manage\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (D:\myself\asp-form-manage\node_modules\_ali-rds@3.3.0@ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\myself\asp-form-manage\node_modules\_ali-rds@3.3.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\myself\asp-form-manage\node_modules\_co@4.6.0@co\index.js:65:19)
+    at D:\myself\asp-form-manage\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: INSERT INTO `groups`(`group_name`) VALUES('你好')
+code: "ER_DUP_ENTRY"
+errno: 1062
+sqlMessage: "Duplicate entry '你好' for key 'group_name'"
+sqlState: "23000"
+index: 0
+sql: "INSERT INTO `groups`(`group_name`) VALUES('你好')"
+name: "ER_DUP_ENTRYError"
+pid: 2904
+hostname: liuqiyu
+
+2020-03-31 17:58:38,342 ERROR 19156 [-/127.0.0.1/-/32ms POST /group/create] nodejs.ER_DUP_ENTRYError: ER_DUP_ENTRY: Duplicate entry '你好' for key 'group_name'
+    at Query.Sequence._packetToError (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    --------------------
+    at Pool.query (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at D:\myself\asp-form-manage\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\myself\asp-form-manage\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (D:\myself\asp-form-manage\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (D:\myself\asp-form-manage\node_modules\_ali-rds@3.3.0@ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\myself\asp-form-manage\node_modules\_ali-rds@3.3.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\myself\asp-form-manage\node_modules\_co@4.6.0@co\index.js:65:19)
+    at D:\myself\asp-form-manage\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: INSERT INTO `groups`(`group_name`) VALUES('你好')
+code: "ER_DUP_ENTRY"
+errno: 1062
+sqlMessage: "Duplicate entry '你好' for key 'group_name'"
+sqlState: "23000"
+index: 0
+sql: "INSERT INTO `groups`(`group_name`) VALUES('你好')"
+name: "ER_DUP_ENTRYError"
+pid: 19156
+hostname: liuqiyu
+
+2020-03-31 17:58:44,989 ERROR 12732 [-/127.0.0.1/-/30ms POST /group/create] nodejs.ER_DUP_ENTRYError: ER_DUP_ENTRY: Duplicate entry '你好' for key 'group_name'
+    at Query.Sequence._packetToError (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    --------------------
+    at Pool.query (D:\myself\asp-form-manage\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at D:\myself\asp-form-manage\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\myself\asp-form-manage\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (D:\myself\asp-form-manage\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (D:\myself\asp-form-manage\node_modules\_ali-rds@3.3.0@ali-rds\lib\client.js:34:20)
+    at RDSClient.proto.query (D:\myself\asp-form-manage\node_modules\_ali-rds@3.3.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\myself\asp-form-manage\node_modules\_co@4.6.0@co\index.js:65:19)
+    at D:\myself\asp-form-manage\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: INSERT INTO `groups`(`group_name`) VALUES('你好')
+code: "ER_DUP_ENTRY"
+errno: 1062
+sqlMessage: "Duplicate entry '你好' for key 'group_name'"
+sqlState: "23000"
+index: 0
+sql: "INSERT INTO `groups`(`group_name`) VALUES('你好')"
+name: "ER_DUP_ENTRYError"
+pid: 12732
+hostname: liuqiyu
+
+2020-03-31 18:12:13,233 ERROR 15884 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 15884
+hostname: liuqiyu
+
+2020-03-31 18:12:30,576 ERROR 15884 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 15884
+hostname: liuqiyu
+
+2020-03-31 18:12:49,597 ERROR 15884 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 15884
+hostname: liuqiyu
+
+2020-03-31 18:14:15,173 ERROR 15884 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 15884
+hostname: liuqiyu
+
+2020-03-31 18:14:59,686 ERROR 15884 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 15884
+hostname: liuqiyu
+
+2020-03-31 18:57:05,312 ERROR 8032 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 8032
+hostname: liuqiyu
+
+2020-03-31 18:57:07,145 ERROR 8032 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 8032
+hostname: liuqiyu
+
+2020-04-01 14:42:35,363 ERROR 10764 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 10764
+hostname: liuqiyu
+
+2020-04-01 15:43:02,567 ERROR 10764 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 10764
+hostname: liuqiyu
+

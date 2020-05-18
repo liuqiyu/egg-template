@@ -1,0 +1,31 @@
+'use strict';
+
+/**
+ * @param {Egg.Application} app - egg application
+ */
+module.exports = app => {
+  const { router, controller } = app;
+
+  // 用户管理 v1
+  router.post('/user/login', controller.user.login);
+
+  // 表单
+  router.post('/form/create', controller.form.create);
+  router.post('/form/lists', controller.form.lists);
+  router.put('/form/update', controller.form.update);
+  router.post('/form/detail', controller.form.detail);
+  router.delete('/form/delete', controller.form.delete);
+
+  // 表格
+  router.post('/table/create', controller.table.create);
+  router.post('/table/lists', controller.table.lists);
+  router.put('/table/update', controller.table.update);
+  router.post('/table/detail', controller.table.detail);
+  router.delete('/table/delete', controller.table.delete);
+
+  // 分组
+  router.post('/group/create', controller.group.create);
+  router.post('/group/lists', controller.group.lists);
+  router.delete('/group/delete', controller.group.delete);
+};
+
