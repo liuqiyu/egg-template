@@ -39,9 +39,9 @@ module.exports = appInfo => {
       // 用户名
       user: 'root',
       // 密码
-      password: 'root',
+      password: '123456',
       // 数据库名
-      database: 'asp_form',
+      database: 'egg-template',
     },
     // 是否加载到 app 上，默认开启
     app: true,
@@ -49,13 +49,46 @@ module.exports = appInfo => {
     agent: false,
   };
 
+  // jsonwebtoken配置
   config.jwt = {
     secret: 'egg-api-jwt',
   };
-
   config.middleware = [
     'jwt',
   ];
+
+  // {app_root}/config/config.default.js
+  exports.swaggerdoc = {
+    dirScanner: './app/controller',
+    apiInfo: {
+      title: 'egg-swagger',
+      description: 'swagger-ui for egg',
+      version: '1.0.0',
+    },
+    schemes: ['http', 'https'],
+    consumes: ['application/json'],
+    produces: ['application/json'],
+    securityDefinitions: {
+      // apikey: {
+      //   type: 'apiKey',
+      //   name: 'clientkey',
+      //   in: 'header',
+      // },
+      // oauth2: {
+      //   type: 'oauth2',
+      //   tokenUrl: 'http://petstore.swagger.io/oauth/dialog',
+      //   flow: 'password',
+      //   scopes: {
+      //     'write:access_token': 'write access_token',
+      //     'read:access_token': 'read access_token',
+      //   },
+      // },
+    },
+    enableSecurity: false,
+    // enableValidate: true,
+    routerMap: false,
+    enable: true,
+  };
 
   return {
     ...config,

@@ -12,3 +12,9 @@ exports.validate = {
   enable: true,
   package: 'egg-validate',
 };
+
+// swaggerdoc 配置
+exports.swaggerdoc = {
+  enable: true,
+  package: 'egg-swagger-doc',
+};

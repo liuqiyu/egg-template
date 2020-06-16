@@ -10,27 +10,9 @@ module.exports = app => {
   router.post('/user/login', controller.user.login);
 
   // 表单
-  router.post('/form/create', controller.form.create);
-  router.post('/form/lists', controller.form.lists);
-  router.put('/form/update', controller.form.update);
-  router.post('/form/detail', controller.form.detail);
-  router.delete('/form/delete', controller.form.delete);
-
-  // 表格
-  router.post('/table/create', controller.table.create);
-  router.post('/table/lists', controller.table.lists);
-  router.put('/table/update', controller.table.update);
-  router.post('/table/detail', controller.table.detail);
-  router.delete('/table/delete', controller.table.delete);
-
-  // 分组
-  router.post('/formModule/create', controller.formModule.create);
-  router.post('/formModule/lists', controller.formModule.lists);
-  router.delete('/formModule/delete', controller.formModule.delete);
-
-  // 项目
-  // router.post('/project/create', controller.group.create);
-  router.post('/project/lists', controller.project.lists);
-  // router.delete('/group/delete', controller.group.delete);
+  // router.post('/form/create', controller.form.create);
+  // router.post('/form/lists', controller.form.lists);
+  // router.put('/form/update', controller.form.update);
+  // router.post('/form/detail', controller.form.detail);
+  // router.delete('/form/delete', controller.form.delete);
 };
-

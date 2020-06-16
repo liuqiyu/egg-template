@@ -10,6 +10,7 @@
     "egg": "^2.15.1",
     "egg-mysql": "^3.0.0",
     "egg-scripts": "^2.11.0",
+    "egg-swagger-doc": "^2.3.2",
     "egg-validate": "^2.0.2",
     "jsonwebtoken": "^8.5.1",
     "moment": "^2.24.0"
