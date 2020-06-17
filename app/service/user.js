@@ -4,6 +4,7 @@ const Service = require('egg').Service;
 const JWT = require('jsonwebtoken');
 
 class UserService extends Service {
+
   async login (loginMsg) {
     const { app } = this;
     let result;
@@ -50,6 +51,36 @@ class UserService extends Service {
       }
     }
     return result;
+  }
+
+  /**
+   * 详情
+   * @param {*} params
+   */
+  async detail (id) {
+    const { app } = this;
+    try {
+      let result = {};
+      const res = await app.mysql.get('user', {
+        id,
+      });
+      if (res) {
+        result = {
+          status: 200,
+          data: res,
+          message: '查询成功',
+        };
+      } else {
+        result = {
+          status: 500,
+          data: null,
+          message: '查询失败',
+        };
+      }
+      return result;
+    } catch (e) {
+      return null;
+    }
   }
 }
 

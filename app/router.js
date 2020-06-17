@@ -8,6 +8,8 @@ module.exports = app => {
 
   // 用户管理 v1
   router.post('/user/login', controller.user.login);
+  router.get('/user/detail', controller.user.detail);
+
 
   // 表单
   // router.post('/form/create', controller.form.create);

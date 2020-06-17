@@ -33,8 +33,20 @@ class UserController extends Controller {
     // loginMsg.password = ctx.helper.encrypt(loginMsg.password);
     // 从service文件中拿到返回结果
     const result = await service.user.login(loginMsg);
-    // ctx.body = result;
-    this.JsonBody(result);
+    ctx.body = result;
+  }
+
+  /**  （ 注释必写，swagger-doc是根据这段注释来生成接口详细信息的 ）。
+   * @summary 根据ID查询信息。
+   * @description 根据ID查询信息。
+   * @router get /user/detail （ get 表示设置请求为 get 请求 ）。
+   * @request query integer id 需要去查新的ID。（ get 对应 query 请求，请求值设定为 integer 纯数字类型）。
+   */
+  async detail () {
+    const { ctx, service } = this;
+    const id = ctx.request.query.id;
+    const res = await service.user.detail(id);
+    ctx.body = res;
   }
 
   /*
