@@ -27,7 +27,7 @@ class UserController extends Controller {
         message: '必填项',
       },
     };
-    const loginMsg = ctx.request.query;
+    const loginMsg = ctx.request.body;
     await ctx.validate(rule, loginMsg); // 验证登陆信息是否合法
     // 为当前输入的密码加密
     // loginMsg.password = ctx.helper.encrypt(loginMsg.password);

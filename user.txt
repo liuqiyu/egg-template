@@ -1,3 +1,0 @@
-"1"	"aaa"	"aaa"								
-"id"	"username"	"password"	"age"	"gender"	"avatar"	"province"	"city"	"area"	"address"	"created_date"
-"1"	"aaa"	"aaa"								
