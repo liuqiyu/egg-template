@@ -8,7 +8,7 @@ module.exports = options => {
     const token = ctx.request.header.authorization;
     // 当前请求时get请求，执行接下来的中间件
     if (!token) {
-      if (ctx.path === '/user/login') {
+      if (ctx.path === '/user/login' || ctx.path === '/user/register') {
         await next();
       } else {
         ctx.status = 401;

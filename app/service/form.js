@@ -30,7 +30,7 @@ class FormService extends Service {
         };
       } else {
         result = {
-          code: 200,
+          code: 500,
           message: 'error',
           data: null,
         };

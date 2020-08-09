@@ -8,7 +8,9 @@ module.exports = app => {
 
   // 用户管理 v1
   router.post('/user/login', controller.user.login);
+  router.post('/user/register', controller.user.register);
   router.get('/user/detail', controller.user.detail);
+  router.post('/user/lists', controller.user.lists);
 
 
   // 表单
